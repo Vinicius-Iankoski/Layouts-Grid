@@ -5,6 +5,7 @@ body {
 
 .container {
     display: grid;
+    margin: 0 auto;
 }
 
 header {
@@ -27,12 +28,12 @@ main {
     color: white;
 }
 
-aside>div.image {
+div.image {
     background-color: #c1e4e6ff;
     color: black;
 }
 
-aside>div.extra {
+div.extra {
     background-color: #4dbd98ff;
     color: black;
 }
@@ -42,14 +43,18 @@ aside>div.extra {
     color: black;
 }
 
+p {
+    justify-self: center;
+    align-self: center;
+}
+
 /* DESKTOP */
 @media (min-width: 1024px) {
 
     .container {
-        margin: 0 auto;
         max-width: 800px;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 1fr 4fr 4fr 2fr;
+        grid-template-rows: 1fr 4fr 2fr 2fr 2fr;
         text-align: center;
     }
 
@@ -73,38 +78,79 @@ aside>div.extra {
 
     main {
         grid-column: 1 / 3;
+        grid-row: 3/5;
         height: 100%;
         display: grid;
     }
 
-    aside {
-        grid-column: 4 / 5;
-        height: 100%;
-        display: grid
+    div.image {
+        display: grid;
+        grid-column: 4;
+        grid-row: 3;
     }
 
-    aside>div.image {
+    div.extra {
         display: grid;
-    }
-
-    aside>div.extra {
-        display: grid;
+        grid-row: 4;
+        grid-column: 4;
     }
 
     .banner {
+        grid-row: 5;
         grid-column: 1 / 5;
         height: 100%;
         display: grid;
     }
 
-    p {
-        justify-self: center;
-        align-self: center;
-    }
+
 }
 
 /* TABLET */
-@media (max-width: 1023px) {}
+@media (max-width: 1023px) {
+    .container {
+        max-width: 800px;
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-rows: 1fr 4fr 3fr 2fr 2fr;
+        text-align: center;
+    }
+
+    header {
+        grid-column: 1 / 4;
+        display: grid;
+    }
+
+    .hero {
+        grid-column: 1/ 4;
+        grid-row: 2;
+        display: grid;
+    }
+
+    nav {
+        grid-column: 1;
+        grid-row: 3/6;
+        display: grid;
+    }
+
+    main {
+        grid-column: 2/4;
+        display: grid;
+    }
+
+    .banner {
+        grid-column: 2/4;
+        grid-row: 4;
+        display: grid;
+    }
+
+    div.extra {
+        grid-row: 5;
+        display: grid;
+    }
+
+    div.image {
+        display: grid;
+    }
+}
 
 /* SMARTPHONE */
 @media (max-width: 767px) {}
