@@ -1,8 +1,4 @@
 /* UNIVERSAL VALUES */
-body {
-    margin-top: 50px;
-}
-
 .container {
     display: grid;
     margin: 0 auto;
@@ -52,7 +48,7 @@ p {
 @media (min-width: 1024px) {
 
     .container {
-        max-width: 800px;
+        max-width: 900px;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: 1fr 4fr 2fr 2fr 2fr;
         text-align: center;
@@ -106,9 +102,9 @@ p {
 }
 
 /* TABLET */
-@media (max-width: 1023px) {
+@media (max-width: 1023px) and (min-width: 767px) {
     .container {
-        max-width: 800px;
+        max-width: 900px;
         grid-template-columns: 1fr 3fr 1fr;
         grid-template-rows: 1fr 4fr 3fr 2fr 2fr;
         text-align: center;
@@ -153,4 +149,45 @@ p {
 }
 
 /* SMARTPHONE */
-@media (max-width: 767px) {}
+@media (max-width: 767px) {
+    .container {
+        max-width: 900px;
+        grid-template-rows: 1fr 1fr 3fr 3fr 2fr 2fr 2fr;
+        grid-template-columns: 1fr;
+    }
+
+    header {
+        grid-row: 1;
+        display: grid;
+    }
+
+    nav {
+        grid-row: 2;
+        display: grid;
+    }
+
+    .hero {
+        grid-row: 3;
+        display: grid;
+    }
+
+    main {
+        grid-row: 4;
+        display: grid;
+    }
+
+    .banner {
+        grid-row: 5;
+        display: grid;
+    }
+
+    div.extra {
+        grid-row: 6;
+        display: grid;
+    }
+
+    div.image {
+        grid-row: 7;
+        display: grid;
+    }
+}
