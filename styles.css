@@ -1,3 +1,4 @@
+/* UNIVERSAL VALUES */
 body {
     margin-top: 50px;
 }
@@ -41,6 +42,7 @@ aside>div.extra {
     color: black;
 }
 
+/* DESKTOP */
 @media (min-width: 1024px) {
 
     .container {
@@ -100,3 +102,9 @@ aside>div.extra {
         align-self: center;
     }
 }
+
+/* TABLET */
+@media (max-width: 1023px) {}
+
+/* SMARTPHONE */
+@media (max-width: 767px) {}
