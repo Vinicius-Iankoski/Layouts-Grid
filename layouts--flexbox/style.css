@@ -1,0 +1,29 @@
+body,
+html {
+    margin: 0;
+}
+
+header {
+    background-color: tomato;
+}
+
+#aside-1 {
+    background-color: yellow;
+}
+
+#aside-2 {
+    background-color: pink;
+}
+
+main {
+    background-color: aqua;
+}
+
+footer {
+    background-color: palegreen;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1000px;
+}
