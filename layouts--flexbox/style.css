@@ -25,7 +25,7 @@ header {
 
 aside {
     height: 200px;
-    width: 100px;
+    width: 30%;
     border-radius: 10px;
 }
 
@@ -42,6 +42,8 @@ main {
     background-color: aqua;
     height: 200px;
     margin: 0 10px 10px 10px;
+    border-radius: 10px;
+    text-align: left;
 }
 
 footer {
