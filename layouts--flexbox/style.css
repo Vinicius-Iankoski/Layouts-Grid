@@ -9,8 +9,6 @@
     display: flex;
     flex-flow: row wrap;
     text-align: center;
-    flex: 1 100%;
-    border-radius: 10px;
 }
 
 
@@ -41,6 +39,8 @@ main {
     font-size: 24px;
 }
 
+
+
 #aside-1 {
     background-color: gold;
     margin-right: 10px;
@@ -54,6 +54,10 @@ main {
 @media all and (min-width: 1024px) {
     main {
         flex: 3;
+    }
+
+    aside {
+        width: 100px;
     }
 
     #aside-1 {
@@ -73,9 +77,29 @@ main {
     }
 }
 
-@media all and (max-width: 767px) {
+/* Tablet */
+@media all and (min-width: 768px) and (max-width: 1023px) {
     aside {
         flex: 1;
         margin-top: 10px;
+    }
+}
+
+/* Smartphone */
+@media all and (max-width: 767px) {
+    .container {
+        flex-flow: column wrap;
+    }
+
+    .row-container {
+        flex-flow: column wrap;
+    }
+
+    #aside-1 {
+        margin: 10px 0;
+    }
+
+    #aside-2 {
+        margin: 0;
     }
 }
