@@ -17,3 +17,5 @@ Confesso que me diverti bastante no processo de criação utilizando Grid CSS, �
 <p>imagem encontrada em: <a href="https://youtu.be/S0a7PEOi0do?si=775jduJ3-0Or_qog">Vídeo encontrado no Youtube</a>.</p>
 Nesta parte, meu objetivo foi justamente de criar estes três layouts, utilizando de CSS FlexBox. Este projeto foi mais complicado de trabalhar, justamente pelo fato desta ferramente ser unidimensional, o contrário de Grid. No entanto, o aprendizado deixado foi excepcional.
 
+## Aprendizado
+Posso dizer com bastante convicção que estes projetos foram muito interessantes e divertidos de se fazer. Pude aprender mais sobre como estruturar uma página web e maneiras eficientes de realizar isso. Desde diferentes maneiras de estruturação com grid, até a organização de itens com FlexBox.
